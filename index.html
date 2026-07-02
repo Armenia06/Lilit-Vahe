@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+<meta charset="UTF-8">
+<!-- ✅ viewport mobile : empêche le zoom automatique -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Հարսանիք · Վահե & Լիլիթ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<!-- Aperçu du lien quand on partage le site -->
+<meta name="description" content="Սիրով հրավիրում ենք Ձեզ մեր հարսանիքին։">
+
+<!-- Open Graph / Facebook / WhatsApp / Instagram -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Հարսանյաց հրավեր · Վահե & Լիլիթ">
+<meta property="og:description" content="Սիրով հրավիրում ենք Ձեզ կիսելու մեր կյանքի ամենագեղեցիկ օրը։">
+<meta property="og:image" content="https://ton-site.com/images/preview.jpg">
+<meta property="og:url" content="https://ton-site.com">
+<meta property="og:site_name" content="Վահե & Լիլիթ">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Հարսանյաց հրավեր · Վահե & Լիլիթ">
+<meta name="twitter:description" content="Սիրով հրավիրում ենք Ձեզ կիսելու մեր կյանքի ամենագեղեցիկ օրը։">
+<meta name="twitter:image" content="https://ton-site.com/images/preview.jpg">
+
+</head>
+
+
+<body>
+
+<!-- ════════════════════════════════════════
+     MUSIQUE DE FOND
+     ════════════════════════════════════════ -->
+<audio id="bg-music" loop>
+  <source src="musique/musique.mp3" type="audio/mpeg">
+</audio>
+
+<div id="audio-toast">♪ Երաժշտությունը նվագում է</div>
+
+<button id="music-toggle" class="music-toggle" type="button" aria-label="Mettre la musique en pause">
+  <span class="music-icon">❚❚</span>
+</button>
+
+<!-- ════════════════════════════════════════
+     HERO — 4 conteneurs séparés pour mieux gérer les photos
+     ════════════════════════════════════════ -->
+<section class="hero">
+
+  <div class="hero-mosaic">
+
+    <div class="hero-photo hero-photo-1">
+      <img src="images/img1.jpeg" alt="">
+    </div>
+
+    <div class="hero-photo hero-photo-2">
+      <img src="images/img2.jpeg" alt="">
+    </div>
+
+    <div class="hero-photo hero-photo-3">
+      <img src="images/img3.jpeg" alt="">
+    </div>
+
+    <div class="hero-photo hero-photo-4">
+      <img src="images/img4.jpeg" alt="">
+    </div>
+
+  </div>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <p class="hero-year">ՀԱՐՍԱՆԻՔ · 2026</p>
+    <div class="hero-names">
+      <span>Վահե</span>
+      <span class="hero-amp">&</span>
+      <span>Լիլիթ</span>
+    </div>
+    <p class="hero-date">ՕԳՈՍՏՈՍԻ 13 · ԵՐԵՎԱՆ</p>
+  </div>
+
+  <div class="scroll-hint">scroll</div>
+
+</section>
+
+<!-- ════════════════════════════════════════
+     SECTION 1
+     ════════════════════════════════════════ -->
+<div class="section" id="s1">
+  <p class="section-label">Հրավեր</p>
+  <h2 class="section-title">Մենք Ձեզ հրավիրում ենք<br><em>մեծ ուրախությամբ</em></h2>
+  <p class="section-body">
+    Թանկագին ընտանիք ու ընկերներ, մեծ ուրախությամբ Ձեզ հրավիրում ենք կիսել մեր ամենաերջանիկ օրը:
+  </p>
+</div>
+
+<div class="divider">
+  <div class="divider-line"></div>
+  <div class="divider-ornament">✦</div>
+  <div class="divider-line"></div>
+</div>
+
+<!-- ════════════════════════════════════════
+     BANDE DE PHOTOS 1
+     ════════════════════════════════════════ -->
+<div class="photo-strip" id="ps1">
+  <div class="p1"><img src="images/img3.jpeg" alt=""></div>
+  <div class="p2"><img src="images/img2.jpeg" alt=""></div>
+  <div class="p3"><img src="images/img4.jpeg" alt=""></div>
+</div>
+
+<!-- ════════════════════════════════════════
+     SECTION 2
+     ════════════════════════════════════════ -->
+<div class="section" id="s2">
+  <p class="section-label">Մեր պատմությունը</p>
+  <h2 class="section-title">Երբ երկու սիրտ<br><em>դառնում են մեկ</em></h2>
+  <p class="section-body">
+    Ամեն ճանապարհ ունի իր սկիզբը, բայց ամենագեղեցիկ ճամփան այն է, որ անցնում ես սիրած մարդու հետ:
+  </p>
+</div>
+
+<!-- ════════════════════════════════════════
+     CITATION
+     ════════════════════════════════════════ -->
+<div class="quote-section" id="qs1">
+  <p class="quote-text">«Սիրել նշանակում է նայել ոչ թե միմյանց, այլ նայել միևնույն ուղղությամբ»</p>
+  <p class="quote-source">Ս.Էքզյուպերի</p>
+</div>
+
+<!-- ════════════════════════════════════════
+     PHOTO PLEINE LARGEUR
+     ════════════════════════════════════════ -->
+<div class="photo-full" id="pf1">
+  <img src="images/img1.jpeg" alt="">
+</div>
+
+<!-- ════════════════════════════════════════
+     SECTION 3
+     ════════════════════════════════════════ -->
+<div class="section" id="s3">
+  <p class="section-label">Ձեր ներկայությունը</p>
+  <h2 class="section-title">Ձեզ հետ<br><em>ավելի կատարյալ կլինի</em></h2>
+  <p class="section-body">
+    Ձեր սիրով, ժպիտով ու ջերմությամբ անմոռանալի դարձրեք մեր օրը:  </p>
+</div>
+
+<!-- ════════════════════════════════════════
+     BANDE DE PHOTOS 2
+     ════════════════════════════════════════ -->
+<div class="photo-strip" id="ps2">
+  <div class="p3"><img src="images/img3.jpeg" alt=""></div>
+  <div class="p1"><img src="images/img2.jpeg" alt=""></div>
+  <div class="p2"><img src="images/img4.jpeg" alt=""></div>
+</div>
+
+<div class="divider" style="margin: 3rem 0 1rem">
+  <div class="divider-line"></div>
+  <div class="divider-ornament">✦</div>
+  <div class="divider-line"></div>
+</div>
+
+<!-- ════════════════════════════════════════
+     PROGRAMME
+     ════════════════════════════════════════ -->
+<div class="horaires" id="hor">
+  <h2 class="horaires-title">Օրվա ծրագիրը</h2>
+
+  <div class="event-card">
+    <div class="event-time">10:30</div>
+    <div class="event-name">ԱՌԱՋԻՆ ՀԱՆԴԻՊՈՒՄ</div>
+    <div class="event-desc">Փեսայի տուն</div>
+    <div class="event-address">Բաղրամյան պողոտա 24, Երևան</div>
+    <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=Baghramyan+24+Yerevan" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+      </svg>
+      Բացել Google Maps-ում
+    </a>
+  </div>
+
+  <!-- Carte avec image : remplacer images/eglise.jpeg par votre photo -->
+  <div class="event-card event-card--photo">
+    <div class="event-card-img">
+      <img src="images/ekexeci.jpg" alt="Église">
+    </div>
+    <div class="event-card-body">
+      <div class="event-time">12:00</div>
+      <div class="event-name">ԵԿԵՂԵՑԻ</div>
+      <div class="event-desc">Պսակադրության արարողություն Սուրբ Գևորգ եկեղեցում</div>
+      <div class="event-address">Ռուբինյանց 1, Երևան · Սուրբ Գևորգ եկեղեցի</div>
+      <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=Saint+Gevorg+Church+Yerevan" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+        </svg>
+        Բացել Google Maps-ում
+      </a>
+    </div>
+  </div>
+
+  <!-- Carte avec image : remplacer images/salle.jpeg par votre photo -->
+  <div class="event-card event-card--photo">
+    <div class="event-card-img">
+      <img src="images/salle.jpg" alt="Salle de réception">
+    </div>
+    <div class="event-card-body">
+      <div class="event-time">14:00</div>
+      <div class="event-name">ՀԱՐՍԱՆՅԱՑ ՍՐԱՀ</div>
+      <div class="event-desc">Palais Wedding Hall</div>
+      <div class="event-address">Ք. Հրազդան, Կամոյի 3</div>
+      <a class="map-btn" href="https://maps.app.goo.gl/taqqa2WSy7UANgjt6" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+        </svg>
+        Բացել Google Maps-ում
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<!-- ════════════════════════════════════════
+     FOOTER
+     ════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="footer-names">Վահե & Լիլիթ</div>
+  <p class="footer-date">13 · 08 · 2026 · ԵՐԵՎԱՆ</p>
+  <p style="font-size:11px; letter-spacing:0.15em">Անհամբեր սպասում ենք Ձեզ</p>
+  <div class="logo">
+    <a href="https://ashot.alwaysdata.net/" target="_blank" rel="noopener noreferrer">
+      <img src="images/logo.svg" alt="Ashot Manucharyan">
+    </a>
+  </div>
+  <a href="https://ashot.alwaysdata.net/" target="_blank" rel="noopener noreferrer">
+    <h3>Ashot Manucharyan</h3>
+  </a>
+</footer>
+
+<script>
+
+/* ── MUSIQUE ── */
+const music = document.getElementById('bg-music');
+const toast = document.getElementById('audio-toast');
+const musicToggle = document.getElementById('music-toggle');
+const musicIcon = musicToggle.querySelector('.music-icon');
+
+let musicStarted = false;
+let userPaused = false;
+let toastTimer;
+let fadeTimer;
+
+function showToast(text = '♪ Երաժշտությունը նվագում է') {
+  toast.textContent = text;
+  toast.classList.add('show');
+
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => {
+    toast.classList.remove('show');
+  }, 2600);
+}
+
+function showMusicButton() {
+  musicToggle.classList.add('show');
+}
+
+function setMusicButtonState() {
+  if (music.paused) {
+    musicIcon.textContent = '▶';
+    musicToggle.setAttribute('aria-label', 'Reprendre la musique');
+  } else {
+    musicIcon.textContent = '❚❚';
+    musicToggle.setAttribute('aria-label', 'Mettre la musique en pause');
+  }
+}
+
+function fadeVolumeTo(targetVolume, duration = 900) {
+  clearInterval(fadeTimer);
+
+  const startVolume = music.volume;
+  const steps = 20;
+  const stepTime = duration / steps;
+  const volumeChange = (targetVolume - startVolume) / steps;
+
+  let currentStep = 0;
+
+  fadeTimer = setInterval(() => {
+    currentStep++;
+
+    music.volume = Math.max(
+      0,
+      Math.min(1, startVolume + volumeChange * currentStep)
+    );
+
+    if (currentStep >= steps) {
+      clearInterval(fadeTimer);
+      music.volume = targetVolume;
+    }
+  }, stepTime);
+}
+
+function startMusic() {
+  showMusicButton();
+
+  if (userPaused) return;
+  if (musicStarted && !music.paused) return;
+
+  music.volume = 0;
+
+  const promise = music.play();
+
+  if (promise !== undefined) {
+    promise.then(() => {
+      musicStarted = true;
+      fadeVolumeTo(0.38, 1200);
+      setMusicButtonState();
+      showToast('♪ Երաժշտությունը նվագում է');
+    }).catch(() => {
+      /*
+        Sur mobile, le navigateur peut bloquer la musique automatique.
+        Dans ce cas, l'utilisateur devra appuyer sur le bouton.
+      */
+      setMusicButtonState();
+    });
+  }
+}
+
+function pauseMusic() {
+  userPaused = true;
+  fadeVolumeTo(0, 400);
+
+  setTimeout(() => {
+    music.pause();
+    setMusicButtonState();
+    showToast('♪ Երաժշտությունը դադարեցված է');
+  }, 420);
+}
+
+function resumeMusic() {
+  userPaused = false;
+  music.volume = 0;
+
+  const promise = music.play();
+
+  if (promise !== undefined) {
+    promise.then(() => {
+      musicStarted = true;
+      fadeVolumeTo(0.38, 900);
+      setMusicButtonState();
+      showToast('♪ Երաժշտությունը նվագում է');
+    }).catch(() => {
+      setMusicButtonState();
+    });
+  }
+}
+
+/* Bouton pause / lecture */
+musicToggle.addEventListener('click', () => {
+  showMusicButton();
+
+  if (music.paused) {
+    resumeMusic();
+  } else {
+    pauseMusic();
+  }
+});
+
+/*
+  Tentative de lancement au premier scroll.
+  Attention : certains mobiles bloquent quand même.
+*/
+window.addEventListener('scroll', () => {
+  showMusicButton();
+  startMusic();
+}, { once: true, passive: true });
+
+/*
+  Meilleure compatibilité mobile :
+  au premier toucher, on tente aussi de lancer.
+*/
+document.addEventListener('touchstart', () => {
+  showMusicButton();
+  startMusic();
+}, { once: true, passive: true });
+
+/*
+  Pour desktop / simulateur navigateur :
+  premier clic = lancement possible aussi.
+*/
+document.addEventListener('click', () => {
+  showMusicButton();
+  startMusic();
+}, { once: true });
+
+setMusicButtonState();
+
+
+/* ── ANIMATIONS AU SCROLL ── */
+/*
+  IMPORTANT :
+  Tes sections ont opacity: 0 en CSS.
+  Donc il faut absolument ajouter .visible quand elles apparaissent.
+*/
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, {
+  threshold: 0.15
+});
+
+document.querySelectorAll('.section, .photo-strip, .photo-full, .quote-section, .horaires')
+  .forEach(el => observer.observe(el));
+
+</script>
+
+</body>
+</html>
